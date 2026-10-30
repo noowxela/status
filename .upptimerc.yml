@@ -1,31 +1,65 @@
-# Change these first
-owner: upptime # Your GitHub organization or username, where this repository lives
-repo: upptime # The name of this repository
+# Upptime config for noowxela/status
+owner: noowxela
+repo: status
 
 sites:
-  - name: Google
-    url: https://www.google.com
-  - name: Wikipedia
-    url: https://en.wikipedia.org
-  - name: Hacker News
-    url: https://news.ycombinator.com
-  - name: Secret Site
-    url: $SECRET_SITE
+  # --- Vercel apps ---
+  - name: Japan Trip
+    url: https://japan-trip-pi-indol.vercel.app
+    maxResponseTime: 5000
+  - name: HikeSeeker
+    url: https://hikeseeker.vercel.app
+    maxResponseTime: 5000
+  - name: Swiper Gallery
+    url: https://swiper-gallery-tau.vercel.app
+    maxResponseTime: 5000
+  - name: Notion Blog
+    url: https://notion-blog-mu-peach.vercel.app
+    maxResponseTime: 5000
+
+  # --- Render APIs (free plan: spins down after ~15 min idle, cold start 30-60s+) ---
+  - name: Toolbox API
+    url: https://toolbox-api-bdzu.onrender.com/health
+    expectedStatusCodes:
+      - 200
+    maxResponseTime: 60000
+
+  # --- GitHub Pages ---
+  - name: Portfolio
+    url: https://noowxela.github.io/portfolio/
+  - name: Resume (PDF)
+    url: https://noowxela.github.io/Resume/Alex_Woon_Jun_Rong_Resume.pdf
+  - name: Toolbox
+    url: https://noowxela.github.io/toolbox/
+  - name: KLEC Mid Valley Infographic
+    url: https://noowxela.github.io/klec-midvalley-infographic/
+  - name: Bukit Jalil Pavilion Infographic
+    url: https://noowxela.github.io/bukitjalil-pavilion-infographic/
+  - name: Food Picker (Cat Meme)
+    url: https://noowxela.github.io/food-picker-catmeme/
+  - name: Hanabi Taikai
+    url: https://noowxela.github.io/hanabi-taikai/
+  - name: Playroom
+    url: https://noowxela.github.io/playroom/
+  - name: Badminton Score
+    url: https://noowxela.github.io/BadmintonScore/
+  - name: GLB Viewer
+    url: https://noowxela.github.io/glb-viewer/
+  - name: UI Component Library
+    url: https://noowxela.github.io/ui-component-library/
 
 status-website:
-  # Add your custom domain name, or remove the `cname` line if you don't have a domain
-  # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
-  cname: demo.upptime.js.org
-  # baseUrl: /your-repo-name
-  logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
-  name: Upptime
-  introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub."
-  introMessage: This is a sample status page which uses **real-time** data from our [GitHub repository](https://github.com/upptime/upptime). No server required — just GitHub Actions, Issues, and Pages. [**Get your own for free**](https://github.com/upptime/upptime)
+  baseUrl: /status
+  name: Alex Woon Status
+  introTitle: "Alex Woon's projects"
+  introMessage: Live uptime and response times for my web apps, APIs and GitHub Pages sites, checked every 5 minutes by [Upptime](https://upptime.js.org).
   navbar:
     - title: Status
       href: /
     - title: GitHub
-      href: https://github.com/$OWNER/$REPO
+      href: https://github.com/$OWNER
 
-# Upptime also supports notifications, assigning issues, and more
-# See https://upptime.js.org/docs/configuration
+# Upptime default schedules (every 5 min uptime) are fine; uncomment to tune:
+# workflowSchedule:
+#   uptime: "*/5 * * * *"
+#   responseTime: "0 23 * * *"
