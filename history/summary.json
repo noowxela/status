@@ -76,19 +76,19 @@
     "url": "https://toolbox-api-bdzu.onrender.com/health",
     "icon": "https://icons.duckduckgo.com/ip3/toolbox-api-bdzu.onrender.com.ico",
     "slug": "toolbox-api",
-    "status": "down",
-    "uptime": "98.69%",
-    "uptimeDay": "87.94%",
-    "uptimeWeek": "98.28%",
-    "uptimeMonth": "98.69%",
-    "uptimeYear": "98.69%",
-    "time": 22501,
-    "timeDay": 0,
-    "timeWeek": 17213,
-    "timeMonth": 22501,
-    "timeYear": 22501,
+    "status": "up",
+    "uptime": "91.15%",
+    "uptimeDay": "11.90%",
+    "uptimeWeek": "87.41%",
+    "uptimeMonth": "91.15%",
+    "uptimeYear": "91.15%",
+    "time": 24608,
+    "timeDay": 43573,
+    "timeWeek": 20978,
+    "timeMonth": 24608,
+    "timeYear": 24608,
     "dailyMinutesDown": {
-      "2026-11-08": 174
+      "2026-11-08": 1269
     }
   },
   {
